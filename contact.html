@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <title> My Blog</title>
+        <link rel="stylesheet" href="./images/css/normaliz.css">
+       <link rel="stylesheet" href="./images/css/nb.css">  
+
+    </head>
+    <body>
+        <!--ici se commence le mainHeader-->
+        <header id="mainHeader">
+            <img src="./images/logo.jpg" alt="MONlGO" height="600" width="500" id="LogoImg">
+            <h1>My Blog</h1> 
+            <nav id="mainnav">
+                <h1 class="accessibility"> Menu Principale</h1>
+                <p class="accessibility"><a href="#pageContent" title="Acceder directement au contenu peincipale de la page "></a>Passer le menu</p>
+                <ul>
+                    <li><a href="index.html">Acceil</a></li>
+                    <li><a href="galleries.html">Galerie</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">Apropos</a></li>
+    
+                </ul>
+    
+            </nav>
+            <button id="menuTogle"><img src="./images/icons8-menu-48.png" alt="imgMenu"></button>
+        </header>
+        <!--ici se commance pageContente-->
+        <main id="pageContent">
+           <h1>Contactez-nous</h1>
+           
+        <p>Merci de completer le formulaire suivant pour nous contacter . Tous les champs de ce formulaire sont requis </p>
+        <form id="frmContact" action="merci.html">
+            <div>
+                <div>
+               <label for="fName"> Prénom </label> 
+               <input type="text" name="fName" id="fName" required autofocus tabindex="1" placeholder="Votre Prénom">
+            </div>
+            <div>
+                <label for="lName"> Nom de famille </label> 
+                <input type="text" name="lName" id="lName" required tabindex="3">
+             </div>
+             <div>
+                <label for="email"> Votre-e-mail </label> 
+                <input type="email" name="email" id="email" required tabindex="2" title="Entrer Votre E-mail">
+             </div>
+            
+            <div>
+                <div>
+                    <label for="message"> Votre message</label> 
+                    <textarea name="message" id="message" required tabindex="4"></textarea>
+                    
+                 </div>
+
+            </div>
+            <button type="submit">Envoyer</button>
+            
+
+        </form>
+        </main>
+        <!--ici se commance mainFooter-->
+        <footer id="mainFooter">
+            <address>Nom de l Auteur <br>
+        500 lg <br>
+        ville <br>
+        <a href="mailto:fatimasnc95@outlook.com">Nous envoyer un message</a>
+     </addresss>
+            <p>&copy; Copyright Fatima Senouci </p>
+        </footer>
+        
+    </body>
+
+</html>

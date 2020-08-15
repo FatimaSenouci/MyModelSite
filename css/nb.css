@@ -1,0 +1,76 @@
+/*ceci est un comentaire */
+:root{
+    --yellow : #f7f6cf;
+    --paleTurquoise:#b6d8f2;
+    --linen : #f4cfdf;
+    --steelblue :#5784ba;
+    --skyblue : #9ac8eb;
+    --vert : #ccdbe2;
+    --redF : #CFCB;
+    --blancc : #efeff1;
+    --bluenuit : #141e30;
+    --verrt:#8eb695;
+    --rose:#fb9da7;
+    --blue:#0b4b88;
+    --blanc : #ffffff;
+    
+}
+
+body{
+    font-family: "Ink Free";
+    color: var(--bluenuit);
+    font-size: 1rem;
+}
+ .accessibility{
+     position: absolute;
+     left: -15000px;
+ }
+ #mainHeader, #mainFooter {
+     background-color : var(--steelblue)
+ }
+  main p {
+      font-size: 20pt;
+
+ }
+ #mainnav a {
+     color: var(--rose);
+     text-decoration: none;
+ }
+ #mainnav a:hover{
+     color : var(--redF);
+
+ }
+ #mainnav a:active{
+    color: var(--blancC);
+
+}
+
+p{
+    color:var(--bluenuit);
+    text-align: center;
+}
+aside {
+    color: rgb(53, 24, 46);
+}
+#mainnav h1 {
+    color : var(--orange);
+}
+#mainHeader > h1 {
+    color : var(--blanc);
+    font-size: 2em;
+}
+#leftCol p{
+    line-height: 1.4;
+}
+#leftCol h1{
+    letter-spacing: 0.5em;
+    color: var(--bluenuit);
+}
+#mainFooter {
+    text-align: center;
+    color: var(--blanc);
+    font-weight: bold;
+}
+#pageContent{
+    background-image: url(/pexels-valeriia-miller-2825749.jpg);
+}
