@@ -14,8 +14,22 @@
     --blue:#0b4b88;
     --blanc : #ffffff;
     --tblanc: var(50/100 --blanc)
+    box-sizing:border-box;
     
 }
+*{
+    box-sizing: inherit;
+}
+#mainHeader{
+    height: 40px;
+}
+#LogoImg{
+    height: 60px;
+    width: 60px;
+    padding-top: 0px;
+    padding-left: 2px;
+}
+
 
 body{
     font-family: "Ink Free";
@@ -55,6 +69,10 @@ aside {
 }
 #mainnav h1 {
     color : var(--orange);
+    display: none;
+}
+#mainnav{
+    display: none;
 }
 #mainHeader > h1 {
     color : var(--blanc);
@@ -71,6 +89,8 @@ aside {
     text-align: center;
     color: var(--blanc);
     font-weight: bold;
+    height: 100px;
+    
 }
 #pageContent{
     background: url(/image/tt.jpg) center center/ cover no-repeat fixed;
