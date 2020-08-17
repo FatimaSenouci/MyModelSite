@@ -22,6 +22,9 @@
 }
 #mainHeader{
     height: 40px;
+    width: 100%;
+    position: fixed;
+    top: 0;
 }
 #LogoImg{
     height: 60px;
@@ -59,6 +62,13 @@ body{
     color: var(--blancC);
 
 }
+img{
+    max-width: 100%;
+    height: auto;
+}
+#vv-img{
+
+}
 
 p{
     color:var(--bluenuit);
@@ -77,6 +87,8 @@ aside {
 #mainHeader > h1 {
     color : var(--blanc);
     font-size: 2em;
+    
+
 }
 #leftCol p{
     line-height: 1.4;
@@ -90,12 +102,18 @@ aside {
     color: var(--blanc);
     font-weight: bold;
     height: 100px;
-    
+    font-size: 10px;
+    /*la position se fais avec ces deux proprietés */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /*le menu et le footer vont t etre fixer mm si tu balance la souris */
 }
 #pageContent{
     background: url(/image/tt.jpg) center center/ cover no-repeat fixed;
-    
+    padding: 100px 20px;
 }
 main{
     background-color: #f7f6cfa1;
+    padding: 20px;
 }
