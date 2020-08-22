@@ -13,7 +13,7 @@
     --rose:#fb9da7;
     --blue:#0b4b88;
     --blanc : #ffffff;
-    --tblanc: var(50/100 --blanc)
+    --tblanc: #ffffff94;
     box-sizing:border-box;
     
 }
@@ -125,8 +125,8 @@ aside {
     min-height: 100vh;
     
 }
-#pageContent.text h1{
-    font-size: 1.8em;
+#pageContent h1{
+    font-size: 3em;
     color: var(--blue);
     letter-spacing: .1em;
     margin: 50px;
@@ -150,6 +150,34 @@ aside {
     height: auto;
     border-radius: 20px;
 }
+#pageContent.galleries ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+#pageContent.galleries ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+} 
+#pageContent.galleries ul li{
+  background-color: var(--tblanc);
+  padding: 10px;
+
+}
+#pageContent.galleries ul li a{
+    background-color: var(--bluenuit);
+    text-decoration: none;
+  
+  }
+  #pageContent.galleries ul li:hover{
+    background-color: var(--vert);
+    
+  
+  }
+
 main{
     background-color: #f7f6cfa1;
     padding: 20px;
