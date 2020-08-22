@@ -33,7 +33,6 @@
     padding-left: 2px;
     z-index: 1000;
     position: relative;
-
 }
 
 
@@ -78,43 +77,21 @@ p{
     color:var(--bluenuit);
     text-align: center;
 }
-#pageContent.text h1{
-    font-size: 1.5em;
-    font-weight: normal;
-    letter-spacing: .1em;
-    margin-top: 50px;
-}
-#pageContent.text img{
-    max-width: 100%;
-    height: auto;
-    border-radius: 20px;
-}
-#pageContent.text dl{
-    border: 1px solid var(--bluenuit);
-    background-color: var(--yellow);
-    padding: 20px;
-    color: var(--bluenuit);
-    border-radius: 20px ;
-}
-#pageContent.text dl dt{
-    font-weight: bold;
-    font-size: 1.2em;
-    border-radius: 20px;
-
-}
-#pageContent.text dl dd{
-    margin: 10px 0 10px 20px;
+aside {
+    color: rgb(53, 24, 46);
 }
 #mainnav h1 {
     color : var(--orange);
-    
+    display: none;
 }
 #mainnav{
    background-color: var(--vert);
-   position: absolute;
+  position:absolute;
    width: 100%;
    top: 40px;
    padding-bottom: 10px;
+  display: none;
+
 }
 #mainnav ul{
     list-style: none;
@@ -124,6 +101,7 @@ p{
 #mainHeader > h1 {
     color : var(--blanc);
     font-size: 2em;
+    display: none;
     
 
 }
@@ -146,6 +124,31 @@ p{
     padding: 100px 20px;
     min-height: 100vh;
     
+}
+#pageContent.text h1{
+    font-size: 1.8em;
+    color: var(--blue);
+    letter-spacing: .1em;
+    margin: 50px;
+}
+#pageContent.text dl{
+   border: 1px solid var(--bluenuit);
+   border-radius: 20px;
+   background-color: var(--tblanc);
+   padding: 20px;
+   color: var(--bluenuit);
+}
+#pageContent.text dl dt{
+   font-weight: bold;
+   font-size: 1.2em;
+}
+#pageContent.text dl dd{
+   margin: 10px 0 10px 20px;
+}
+#pageContent.text img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
 }
 main{
     background-color: #f7f6cfa1;
