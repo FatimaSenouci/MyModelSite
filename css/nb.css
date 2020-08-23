@@ -233,6 +233,7 @@ main{
     color: green;
     font-size: 1.3em;
 }
+/*.8em == 80%*/
 #pageContent.blogList #leftCol article header p{
    font-size: .8em;
     font-style: italic;
@@ -294,4 +295,28 @@ main{
 }
 #pageContent.blog #rightCol h2,#pageContent.blog #rightCol h2 a:hover{
     border-radius: 10px;
+}
+/* rendre le boutton du menu responsive  */
+#menuTogle{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+} 
+/* @media la les style css s excute q avec des critaires, screen== ecran  */
+@media screen and(min-width: 768px){
+    #menuTogle{
+        display: none;
+    }
+}
+/*le site mydevice.io donne plein d informations sur l appareille que vous etuliser */
+@media screen and(min-width:1024px){
+    #menuTogle{
+        display: none;
+    }
+}
+@media screen and(min-width:1200px){
+    #menuTogle{
+        display: none;
+    }
 }
