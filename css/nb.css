@@ -15,6 +15,7 @@
     --blanc : #ffffff;
     --tblanc: #ffffff94;
     box-sizing:border-box;
+    --rouge:rgb(121, 15, 15);
     
 }
 *{
@@ -181,4 +182,116 @@ aside {
 main{
     background-color: #f7f6cfa1;
     padding: 20px;
+}
+#pageContent.contact form{
+    border-top: solid 1px var(--rouge);
+}
+#pageContent.contact form>div>div{
+    margin: 20px 0;
+}
+#pageContent.contact form label{
+    margin-bottom: 5px;
+    font-size: 1.3em;
+}
+#pageContent.contact form textarea{
+   height: 150px;
+   /*desactiver le redimentionnement de la textarea*/
+   resize: none;
+}
+#pageContent.contact form button{
+   padding: 10px;
+   background-color: var(--blue);
+   color: var(--tblanc);
+   border: none;
+   margin-top: 30px;
+}
+#pageContent.contact form button:active{
+    background-color: var(--steelblue);
+}
+#pageContent.contact form button:hover{
+   background-color: rgb(121, 15, 15)
+}
+#pageContent.blogList #leftCol article {
+    padding: 20px;
+}
+/* si je veux remmetre en couleur les article j utilise les pseudo : ....article:first-child -> seullement le 1 article*/
+/* le dernier article -> :... article:last-child */
+/*si je veux le n eme article -> ..article:nth-child(num du paragraphe )*/
+/*et si je veux remmetre les article paire -> ..article:nth-child(even) et si je veux les impaire (odd)*/
+#pageContent.blogList #leftCol article:nth-child(even) {
+ background-color: var(--yellow);
+}
+#pageContent.blogList #leftCol article:nth-child(odd) {
+    background-color: var(--linen);
+   }
+
+#pageContent.blogList #leftCol article header{
+    border-bottom: 1px solid var(--rouge);
+}
+#pageContent.blogList #leftCol article header h1{
+    margin: 0;
+    color: green;
+    font-size: 1.3em;
+}
+#pageContent.blogList #leftCol article header p{
+   font-size: .8em;
+    font-style: italic;
+}
+
+#pageContent.blogList #leftCol article  a{
+    color: var(--rouge);
+    text-decoration: none;
+}
+#pageContent.blogList #leftCol article  a:hover{
+    
+    text-decoration: underline;
+}
+#pageContent.blog #rightCol{
+    background-color: var(--bluenuit);
+    padding: 20px;
+}
+#pageContent.blog #rightCol section{
+    border: 1px solid var(--yellow);
+    padding-bottom: 20px;
+}
+#pageContent.blog #rightCol section>h1{
+    color: var(--yellow);
+    font-size: 1.3em;
+}
+#pageContent.blog #rightCol #blocSearch input{
+    width: 100%;
+    border-radius: 10px;
+}
+#pageContent.blog #rightCol ul{
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+#pageContent.blog #rightCol ul li ,#pageContent.blog #rightCol h2{
+   background-color: var(--yellow);
+}
+#pageContent.blog #rightCol li a span,#pageContent.blog #rightCol h2  span{
+   width: 20px;
+   height: 20px;
+   font-size: 12px;
+   border-radius: 50%;
+   background-color: var(--redF); 
+   color: var(--yellow);
+}
+#pageContent.blog #rightCol li a:hover,#pageContent.blog #rightCol h2 a:hover{
+    background-color: var(--linen);
+   
+}
+#pageContent.blog #rightCol li a:hover span,#pageContent.blog #rightCol h2 a:hover span{
+    background-color: var(--yellow);
+    color: var(--rouge);
+}
+#pageContent.blog #rightCol ul li:first-child,#pageContent.blog #rightCol ul li:first-child a:hover{
+    border-radius: 10px 10px 0 0;
+}
+#pageContent.blog #rightCol ul li:last-child,#pageContent.blog #rightCol ul li:last-child a:hover{
+    border-radius:0 0 10px 10px ;
+}
+#pageContent.blog #rightCol h2,#pageContent.blog #rightCol h2 a:hover{
+    border-radius: 10px;
 }
