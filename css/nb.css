@@ -26,6 +26,10 @@
     width: 100%;
     position: fixed;
     top: 0;
+     /* placer les elements cote a cote logo le titre le boutton et le mettre en 3 colonnes */
+     display: grid;
+     grid-template-columns: 60px 1fr 40px; /* 1fr c a d le titre s occupe de tt le reste d espace */
+    
 }
 #LogoImg{
     height: 60px;
@@ -86,12 +90,12 @@ aside {
     display: none;
 }
 #mainnav{
-   background-color: var(--vert);
+   background-color: var(--bluenuit);
   position:absolute;
    width: 100%;
    top: 40px;
    padding-bottom: 10px;
-  display: none;
+ 
 
 }
 #mainnav ul{
@@ -101,9 +105,8 @@ aside {
 }
 #mainHeader > h1 {
     color : var(--blanc);
-    font-size: 2em;
-    display: none;
-    
+    font-size: 1.5em;
+   
 
 }
 
@@ -155,14 +158,11 @@ aside {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-gap: 20px;/*mettre d'espace entre les element du grid */
 
 }
-#pageContent.galleries ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    
-} 
+ 
 #pageContent.galleries ul li{
   background-color: var(--tblanc);
   padding: 10px;
@@ -210,6 +210,15 @@ main{
 }
 #pageContent.contact form button:hover{
    background-color: rgb(121, 15, 15)
+}
+/*twoCols est une class pour metrre le leftcol et rightcol cote a cote */
+#pageContent.twoCols{
+    display: grid;
+    grid-gap: 20px;
+}
+#pageContent.blogList #leftCol{
+    display: grid;
+    grid-gap: 20px;
 }
 #pageContent.blogList #leftCol article {
     padding: 20px;
@@ -308,15 +317,47 @@ main{
     #menuTogle{
         display: none;
     }
+    #mainHeader{
+        grid-template-columns: 60px 250px 1fr;
+    }
+    /*concernant l affichage du menu */
+    #mainnav{
+        position: static;
+    }
+    #pageContent.galleries ul{
+        grid-template-columns: repeat(2,1fr);/* mettre 2 photos a coté */
+    }
 }
 /*le site mydevice.io donne plein d informations sur l appareille que vous etuliser */
 @media screen and(min-width:1024px){
-    #menuTogle{
-        display: none;
+    #mainHeader{
+        grid-template-columns: 60px repeat(2,1fr);/* c la mm chose avec 1fr 1fr */
     }
+    #mainHeader > h1{
+        font-size: 2em;
+    }
+    #pageContent.galleries ul{
+        grid-template-columns: repeat(3,1fr);/* mettre 2 photos a coté */
+    }
+    /*mettre le menu cote a cote de page content */
+    #pageContent.twoCols{
+        grid-template-columns: 2fr 1fr;
+    }
+}
 }
 @media screen and(min-width:1200px){
     #menuTogle{
         display: none;
+    }
+    /*LES gride mise avec les media */
+    #mainHeader{
+        grid-template-columns: 60px 250px 1fr;
+    }
+    #pageContent.galleries ul{
+        grid-template-columns: repeat(4,1fr);/* mettre 2 photos a coté */
+    }
+    /*mettre le menu cote a cote de page content */
+    #pageContent.twoCols{
+        grid-template-columns: 3fr 1fr;
     }
 }
