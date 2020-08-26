@@ -142,6 +142,28 @@ aside {
     min-height: 100vh;
     
 }
+#pageContent.home{
+
+  
+}
+#pageContent.home #pictInfo{
+    background-color: var(--tblanc);
+    padding: 0px;
+    width: 0px;
+  
+}
+#pageContent.home #pictInfo h1{
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+#pageContent.home #pictInfo p{
+    margin: 10px 0;
+    font-size: .8em;
+
+}
+#pageContent.text.alignRight{
+    float: left;
+}
 #pageContent h1{
     font-size: 3em;
     color: var(--blue);
@@ -198,16 +220,22 @@ main{
 }
 #pageContent.contact form{
     border-top: solid 1px var(--rouge);
+    display: grid;
 }
 #pageContent.contact form>div>div{
     margin: 20px 0;
+    display: flex;
+    flex-direction: column;
 }
 #pageContent.contact form label{
     margin-bottom: 5px;
     font-size: 1.3em;
+    font-weight: bold;
+    color: var(--blue);
 }
 #pageContent.contact form textarea{
-   height: 150px;
+   height: 60px;
+   width: 1150px;
    /*desactiver le redimentionnement de la textarea*/
    resize: none;
 }
@@ -293,13 +321,26 @@ main{
 #pageContent.blog #rightCol ul li ,#pageContent.blog #rightCol h2{
    background-color: var(--yellow);
 }
+#pageContent.blog #rightCol li a ,#pageContent.blog #rightCol h2 a{
+    color: rgb(50, 16, 119);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+
+}
 #pageContent.blog #rightCol li a span,#pageContent.blog #rightCol h2  span{
    width: 20px;
    height: 20px;
    font-size: 12px;
    border-radius: 50%;
    background-color: var(--redF); 
-   color: var(--yellow);
+   color: var(--rouge);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
 }
 #pageContent.blog #rightCol li a:hover,#pageContent.blog #rightCol h2 a:hover{
     background-color: var(--linen);
@@ -354,19 +395,27 @@ main{
     }
 }
 /*le site mydevice.io donne plein d informations sur l appareille que vous etuliser */
-@media screen and(min-width:1024px){
+@media screen and(min-width:1024px) {
     #mainHeader{
-        grid-template-columns: 60px repeat(2,1fr);/* c la mm chose avec 1fr 1fr */
+        grid-template-columns: 60px repeat(2 , 1fr);/* c la mm chose avec 1fr 1fr */
     }
-    #mainHeader > h1{
+    #mainHeader > h1 {
         font-size: 2em;
     }
-    #pageContent.galleries ul{
-        grid-template-columns: repeat(3,1fr);/* mettre 2 photos a coté */
+    #pageContent.galleries ul {
+        grid-template-columns: repeat(3 , 1fr);/* mettre 2 photos a coté */
     }
     /*mettre le menu cote a cote de page content */
-    #pageContent.twoCols{
+    #pageContent.twoCols {
         grid-template-columns: 2fr 1fr;
+    }
+    #pageContent.contact form {
+        grid-template-columns: repeat(2 , 1fr);
+        grid-gap: 20px;
+
+    }
+    #pageContent.contact form button {
+         grid-column: span 2;
     }
 }
 
@@ -379,7 +428,7 @@ main{
         grid-template-columns: 60px 250px 1fr;
     }
     #pageContent.galleries ul{
-        grid-template-columns: repeat(4,1fr);/* mettre 2 photos a coté */
+        grid-template-columns: repeat(4 , 1fr);/* mettre 2 photos a coté */
     }
     /*mettre le menu cote a cote de page content */
     #pageContent.twoCols{
